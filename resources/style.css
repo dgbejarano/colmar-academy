@@ -1,16 +1,60 @@
 html {
   font-size: 18px;
+
 }
-/*Boddy section*/
-body  {
-with:100%;
+/*Body section*/
+
+header, h1, h2, h3 {
+  font-family: "Lato", "Helvetica", sans-serif;
+}
+body {
+  background-color: rgba(195, 196, 158, 1);
 }
 /*header section*/
-header {
-  display: flex;
-  width: auto;
+
+#logo {
+  height: 32px;
+  
+
 }
 
+#colmar {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  border: 3px solid #333;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+
+.name {
+  margin: auto 0;
+}
+.logo {
+    display: inline-flex;
+    margin-left: 24px;
+}
+
+nav {
+  display: flex;
+  margin: auto 24px;
+  height: inherit;
+  align-items: center;
+
+}
+
+.topnav a {
+  margin: auto 0 auto 16px;
+  }
+
+.topnav a:hover {
+  border-bottom: 3px solid #524632;
+}
 
 /*content secction*/
 
