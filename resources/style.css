@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
 
 }
 /*Body section*/
@@ -46,7 +46,7 @@ header {
 
 nav {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: auto 24px;
   height: inherit;
   align-items: center;
@@ -66,24 +66,35 @@ nav {
 /*general conf */
 
 h1 {
+  display: block;
   font-family: "lato", "helvetica", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  margin: 0.75rem 0;
+
 }
 
 h3 {
+  display: block;
   font-family: "lato", "helvetica", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin: 0.75rem 0;
+;
 }
 
-p, a {
+p {
+  display: block;
   font-family: "roboto", "helvetica", sans-serif;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
+
+
+a {
+  font-family: "roboto", "helvetica", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
 
 /*section one*/
 
@@ -95,8 +106,9 @@ p, a {
 
 .sec1banner {
   display: flex;
+  box-sizing: border-box;
   width: 60%;
-  margin: 32px 24px;
+  padding: 32px 24px;
 }
 
 .sec1banner img {
@@ -135,7 +147,7 @@ aside .maintext {
 
 }
 
-/* section two */
+/* section two and second column of section four */
 
 .sectiontwo {
   display: flex;
@@ -149,18 +161,32 @@ aside .maintext {
   flex-direction: column;
   width: 60%;
   height: auto;
-  margin: 24px;
-  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 0 24px;
+  align-content: space-around;
 }
 
 .sectiontwo img {
   width: 100%;
   height: 100%;
-  margin-bottom: 24px;
+
+
   }
 
+
+  .sec1banner {
+    display: flex;
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+.minitext {
+  box-sizing: border-box;
+  padding: 32px 0 24px 0;
+}
+
 #footnote {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 
 }
 
@@ -168,8 +194,6 @@ aside .maintext {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 32px 16px;
-
 
 }
 
@@ -186,26 +210,31 @@ aside .maintext {
   }
 
 .square {
-
+  box-sizing: border-box;
   width: 35%;
-  padding: 16px 16px 0 16px;
-  border: 2px solid black;
+  padding: 16px;
+
 
 }
 
 .square img {
   display: flex;
+  width: 100%;
   align-items: center;
+
+
 }
 
 .minicolumn {
-  display: relative;
+  display: flex;
+  flex-direction: column;
   width: 65%;
 
 }
 
 .minicolumn a {
   color: #8f7e4f;
+  padding-top: 8px;
 
 }
 
@@ -214,6 +243,105 @@ aside .maintext {
 
 }
 
+.minicolumn h3 {
+  padding-bottom: 8px;
+}
+
+
+/*Section Three*/
+
+.sectionheader {
+  display: block;
+  margin: 32px;
+  text-align: center;
+}
+.sectionthree  {
+  display:flex;
+  width: 100%;
+  background-color:#c3c49e;
+  display: flex;
+  justify-content: center;
+}
+
+.maingrid {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gridline {
+  display: flex;
+  flex-direction: row;
+  margin: 0 56px;
+
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 33.333333333%;
+  height: auto;
+  margin: 32px 16px;
+
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* Section four*/
+.sectionfour {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.s4column1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 24px;
+  align-content: space-around;
+}
+video {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.s4column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+}
+
+.s4c2rows:hover {
+  background-color: #c3c49e;
+}
+
+.s4c2rows {
+  display: flex;
+  flex-direction: row;
+  border: 0.25px solid #c3c49e;
+  align-items: center;
+
+  }
 
 
 /*footer section*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-family: "roboto", "helvetica", sans-serif;
+  font-size: 0.75rem;
+  border-top: 0.25px solid #c3c49e;
+  padding: 16px 24px;
+}
