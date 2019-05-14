@@ -166,6 +166,7 @@ aside {
   box-sizing: border-box;
   padding: 0 24px;
   align-content: space-around;
+
 }
 
 .sectiontwo img {
@@ -175,7 +176,13 @@ aside {
 
   }
 
+.s2column1 .text h1 {
+  margin: 32px 0px 24px 0px;
+}
 
+.s2column1 .text p {
+  padding-bottom: 4px
+}
   .sec1banner {
     display: flex;
     width: 60%;
@@ -188,7 +195,12 @@ aside {
 }
 
 #footnote {
+  display: inline;
+  vertical-align: text-bottom;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   font-size: 0.6rem;
+  font-weight: bold;
 
 }
 
@@ -254,7 +266,7 @@ aside {
 
 .sectionheader {
   display: block;
-  margin: 32px;
+  margin: 32px 0px 0px 0px;
   text-align: center;
 }
 .sectionthree  {
@@ -280,9 +292,11 @@ aside {
 .grid {
   display: flex;
   flex-direction: column;
+  font-family: "lato", "helvetica", sans-serif;
   width: 33.333333333%;
   height: auto;
   margin: 32px 16px;
+  background-color: #ffffff;
 
 }
 
@@ -292,8 +306,19 @@ aside {
 
 }
 
+.gridtext {
+  margin: 8px 16px;
+
+}
+
+.grid h3 {
+  font-weight: 900;
+  margin-top: 16px;
+}
+
 /* Section four*/
 .sectionfour {
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
@@ -307,6 +332,14 @@ aside {
   box-sizing: border-box;
   padding: 0 24px;
   align-content: space-around;
+}
+
+.s4column1 .text h1 {
+  margin: 24px 0px 8px 0px;
+}
+
+.s4column1 .text p {
+  margin-bottom: 32px;
 }
 video {
   width: 100%;
@@ -329,7 +362,6 @@ video {
 .s4c2rows {
   display: flex;
   flex-direction: row;
-  border: 0.25px solid #c3c49e;
   align-items: center;
 
   }
@@ -350,7 +382,7 @@ footer {
 
 
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 701px) {
   .query  {
     display: none;
   }
@@ -364,7 +396,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
+
+header {
+  width: 100%
+}
 
 .headnav {
   width: 100%;
@@ -377,7 +413,6 @@ footer {
   justify-content: space-between;
   width: 100%;
   height: 64px;
-  border: 1px solid red;
 
 }
 
@@ -442,18 +477,40 @@ footer {
 .s2column2, .s2c2rows {
   display: flex;
   flex-direction: column;
-  width: 100%
+  width: 100%;
+  border: none;
 
+}
+
+.s2column2 {
+  margin: 16px 0px 32px 0px;
 }
 
 .minicolumn {
   margin: 0;
-  padding: 0px;
+  padding-left: 16px;
   width: 100%;
+  margin: 32px 0px;
 }
 
 .gridline {
      display:none;
+   }
+
+   .square {
+     box-sizing: border-box;
+     width: 100%;
+     padding: 0px;
+
+
+   }
+
+   .square img {
+     display: flex;
+     width: 100%;
+     align-items: center;
+
+
    }
 
 .sectionthree {
@@ -495,7 +552,10 @@ footer {
   display: flex;
   width: 100%;
 
+
 }
+
+
 #text4 {
   display: none;
 
